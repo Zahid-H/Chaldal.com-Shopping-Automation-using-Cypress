@@ -22,11 +22,11 @@ describe('Online Chaldal automation shopping', () => {
     });
     it('|Test case_002| clicking on the catagories soft drinks and select a product', () => {
         //Selecting beverages section
-        cy.get('[href="cleaning"] > .categoryBox > .categoryName').click()
+        cy.get('[href="beverages"] > .categoryBox > .categoryName').click()
         //Seleting soft Drinks 
-        cy.get('body > div:nth-child(2) > div:nth-child(1) > div:nth-child(8) > section:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > section:nth-child(2) > div:nth-child(2) > div:nth-child(1) > a:nth-child(2) > div:nth-child(1) > div:nth-child(2)').click()
+        cy.contains('Soft Drinks').click()
         // Adding the  item on the list
-        cy.contains('Sprite').click()
+        cy.contains('Mountain Dew').click()
         //check the shping card
         cy.wait(2000)
         cy.get("div[class='total']").click()
@@ -56,7 +56,7 @@ describe('Online Chaldal automation shopping', () => {
         //Seleting chicken
         cy.get('body > div:nth-child(2) > div:nth-child(1) > div:nth-child(8) > section:nth-child(3) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > section:nth-child(1) > div:nth-child(2) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(2)').click()
         // Adding the  item on the list
-        cy.contains('Chaldal Premium Roast Chicken ± 50 gm').click()
+        cy.contains('Chaldal Premium Roast Chicken').click()
         //check the shping card
         cy.wait(2000)
         cy.get("div[class='total']").click()
