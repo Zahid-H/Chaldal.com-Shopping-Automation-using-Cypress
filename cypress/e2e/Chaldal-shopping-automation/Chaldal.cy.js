@@ -4,8 +4,23 @@ describe('Online Chaldal automation shopping', () => {
     beforeEach(() => {
         cy.visit('https://chaldal.com/')
     })
+    it('|Test case_001| Full process of ordering a product by searching', () => {
 
-    it('clicking on the catagories soft drinks and select a product', () => {
+        cy.get('.searchBox').first().type('chashi')
+        cy.wait(3000)
+        cy.contains('Chashi Aromatic Chinigura Rice').click()
+        cy.wait(3000)
+        cy.get("div[class='total']").click()
+        cy.wait(3000)
+        cy.contains('Place Order').click()
+        cy.wait(3000)
+        cy.get('.input > input').type('010101010')
+        cy.get("button[class='loginBtn']").click()
+        cy.wait(3000)
+
+
+    });
+    it('|Test case_002| clicking on the catagories soft drinks and select a product', () => {
         //Selecting beverages section
         cy.get('[href="cleaning"] > .categoryBox > .categoryName').click()
         //Seleting soft Drinks 
@@ -18,7 +33,7 @@ describe('Online Chaldal automation shopping', () => {
         cy.wait(2000)
 
     })
-    it('clicking on the catagories Fruits and vegetables select a product', () => {
+    it('|Test case_003| clicking on the catagories Fruits and vegetables select a product', () => {
         //Selecting fruits and vegtables section
 
         cy.get('[href="fruits-vegetables"] > .categoryBox > .categoryName').click()
@@ -33,7 +48,7 @@ describe('Online Chaldal automation shopping', () => {
         cy.wait(2000)
 
     })
-    it('clicking on the catagories Meat and fish select a product', () => {
+    it('|Test case_004| clicking on the catagories Meat and fish select a product', () => {
         //Selecting Meat and fish section
 
         cy.get('[href="meat-fish"] > .categoryBox > .categoryName').click()
@@ -48,7 +63,7 @@ describe('Online Chaldal automation shopping', () => {
         cy.wait(2000)
 
     })
-    it('clicking on the catagories Cooking and select a product', () => {
+    it('|Test case_005| clicking on the catagories Cooking and select a product', () => {
         //Selecting spices section
 
         cy.get('[href="cooking"] > .categoryBox').click()
@@ -63,7 +78,7 @@ describe('Online Chaldal automation shopping', () => {
         cy.wait(2000)
 
     })
-    it('clicking on the catagories Home ceaning suplies and select a product', () => {
+    it('|Test case_006| clicking on the catagories Home ceaning suplies and select a product', () => {
         //Selecting Home cleaning suplies section
 
         cy.get('[href="cleaning"] > .categoryBox > .categoryName').click()
