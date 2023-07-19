@@ -13,12 +13,14 @@ describe('Online Chaldal automation shopping', () => {
         // Adding the first item on the list
         cy.contains('Coca-Cola').click()
         //check the shping card
+        cy.wait(2000)
         cy.get("div[class='total']").click()
-
+        cy.wait(2000)
 
     })
     it('clicking on the catagories Fruits and vegetables ', () => {
         //Selecting fruits and vegtables section
+
         cy.get('[href="fruits-vegetables"] > .categoryBox > .categoryName').click()
 
         //Seleting Fruits 
@@ -26,7 +28,9 @@ describe('Online Chaldal automation shopping', () => {
         // Adding the first item on the list
         cy.contains('Shagor Kola (Banana Sagor)').click()
         //check the shping card
+        cy.wait(2000)
         cy.get("div[class='total']").click()
+        cy.wait(2000)
 
     })
 
