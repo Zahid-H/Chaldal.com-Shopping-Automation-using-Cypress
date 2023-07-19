@@ -18,7 +18,7 @@
   <li>run command npx cypress open</li>
   <li>Cypress window opens and Start "E2E Testing in Chrome
 Switch testing type"</li>
-  <li>Click chaldal.cy.js cypress\e2e\Chaldal-shopping-automation\chaldal.cy.js</li>
+  <li>Click chaldal.cy.js from cypress\e2e\Chaldal-shopping-automation\chaldal.cy.js</li>
 </ul>
 
 # Chaldal.com Automation Demo Video 
