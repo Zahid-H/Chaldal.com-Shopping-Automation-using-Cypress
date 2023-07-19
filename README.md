@@ -11,4 +11,7 @@
 <li>write command npx cypress open</li>
 <li>You will find my codes file in the ..\cypress\e2e\Chaldal-shopping-automation directory</li>
 </ul>
+
+
+
 ![chaldal](https://github.com/Zahid-H/Chaldal.com-Shopping-Automation-using-Cypress/assets/83463788/2a6bfd87-51f9-41be-8844-dae05434404e)
