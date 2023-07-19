@@ -1,0 +1,18 @@
+{
+  "name": "chaldal.com-shopping-automation-using-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Chaldal.com-Shopping-Automation-using-Cypress"
+  },
+  "author": "SQA Engineer Zahid Hasan Juel",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.1"
+  }
+}
